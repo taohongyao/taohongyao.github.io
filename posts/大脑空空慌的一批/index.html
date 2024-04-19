@@ -1,0 +1,1245 @@
+<!DOCTYPE html>
+<html style="display: none;" lang="zh" >
+<head>
+    <meta charset="utf-8">
+    <!--
+        © Material Theme
+        https://github.com/viosey/hexo-theme-material
+        Version: 1.5.2 -->
+    <script>
+        window.materialVersion = "1.5.2"
+        // Delete localstorage with these tags
+        window.oldVersion = [
+            'codestartv1',
+            '1.3.4',
+            '1.4.0',
+            '1.4.0b1',
+            '1.5.0'
+        ]
+    </script>
+
+
+	
+    <!-- dns prefetch -->
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+
+
+    <link rel="dns-prefetch" href="https://cdn1.lncld.net"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Meta & Info -->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!-- Title -->
+    
+    <title>
+        
+            大脑空空慌的一批 | 
+        
+        Declan&#39;s Blog
+    </title>
+
+    <!-- Favicons -->
+    <link rel="icon shortcut" type="image/ico" href="/images/sunflower.jpg">
+    <link rel="icon" href="/images/sunflower.jpg">
+
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="description" itemprop="description" content="Studying is the best way of survive（revenge）">
+    <meta name="keywords" content=",Solar">
+    <meta name="theme-color" content="#5755d9">
+
+    <!-- Disable Fucking Bloody Baidu Tranformation -->
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+
+    <!--[if lte IE 9]>
+        <link rel="stylesheet" href="/css/ie-blocker.css">
+
+        
+            <script src="/js/ie-blocker.zhCN.js"></script>
+        
+    <![endif]-->
+
+	<! -- Import Aplayer -- >
+
+	<link rel="stylesheet" href="/css/APlayer.min.css">
+	<script src="/js/APlayer.min.js"></script>
+	
+    <!-- Import lsloader -->
+    <script>(function(){window.lsloader={jsRunSequence:[],jsnamemap:{},cssnamemap:{}};lsloader.removeLS=function(a){try{localStorage.removeItem(a)}catch(b){}};lsloader.setLS=function(a,c){try{localStorage.setItem(a,c)}catch(b){}};lsloader.getLS=function(a){var c="";try{c=localStorage.getItem(a)}catch(b){c=""}return c};versionString="/*"+(window.materialVersion||"unknownVersion")+"*/";lsloader.clean=function(){try{var b=[];for(var a=0;a<localStorage.length;a++){b.push(localStorage.key(a))}b.forEach(function(e){var f=lsloader.getLS(e);if(window.oldVersion){var d=window.oldVersion.reduce(function(g,h){return g||f.indexOf("/*"+h+"*/")!==-1},false);if(d){lsloader.removeLS(e)}}})}catch(c){}};lsloader.clean();lsloader.load=function(f,a,b,d){if(typeof b==="boolean"){d=b;b=undefined}d=d||false;b=b||function(){};var e;e=this.getLS(f);if(e&&e.indexOf(versionString)===-1){this.removeLS(f);this.requestResource(f,a,b,d);return}if(e){var c=e.split(versionString)[0];if(c!=a){console.log("reload:"+a);this.removeLS(f);this.requestResource(f,a,b,d);return}e=e.split(versionString)[1];if(d){this.jsRunSequence.push({name:f,code:e});this.runjs(a,f,e)}else{document.getElementById(f).appendChild(document.createTextNode(e));b()}}else{this.requestResource(f,a,b,d)}};lsloader.requestResource=function(b,e,a,c){var d=this;if(c){this.iojs(e,b,function(h,f,g){d.setLS(f,h+versionString+g);d.runjs(h,f,g)})}else{this.iocss(e,b,function(f){document.getElementById(b).appendChild(document.createTextNode(f));d.setLS(b,e+versionString+f)},a)}};lsloader.iojs=function(d,b,g){var a=this;a.jsRunSequence.push({name:b,code:""});try{var f=new XMLHttpRequest();f.open("get",d,true);f.onreadystatechange=function(){if(f.readyState==4){if((f.status>=200&&f.status<300)||f.status==304){if(f.response!=""){g(d,b,f.response);return}}a.jsfallback(d,b)}};f.send(null)}catch(c){a.jsfallback(d,b)}};lsloader.iocss=function(f,c,h,a){var b=this;try{var g=new XMLHttpRequest();g.open("get",f,true);g.onreadystatechange=function(){if(g.readyState==4){if((g.status>=200&&g.status<300)||g.status==304){if(g.response!=""){h(g.response);a();return}}b.cssfallback(f,c,a)}};g.send(null)}catch(d){b.cssfallback(f,c,a)}};lsloader.iofonts=function(f,c,h,a){var b=this;try{var g=new XMLHttpRequest();g.open("get",f,true);g.onreadystatechange=function(){if(g.readyState==4){if((g.status>=200&&g.status<300)||g.status==304){if(g.response!=""){h(g.response);a();return}}b.cssfallback(f,c,a)}};g.send(null)}catch(d){b.cssfallback(f,c,a)}};lsloader.runjs=function(f,c,e){if(!!c&&!!e){for(var b in this.jsRunSequence){if(this.jsRunSequence[b].name==c){this.jsRunSequence[b].code=e}}}if(!!this.jsRunSequence[0]&&!!this.jsRunSequence[0].code&&this.jsRunSequence[0].status!="failed"){var a=document.createElement("script");a.appendChild(document.createTextNode(this.jsRunSequence[0].code));a.type="text/javascript";document.getElementsByTagName("head")[0].appendChild(a);this.jsRunSequence.shift();if(this.jsRunSequence.length>0){this.runjs()}}else{if(!!this.jsRunSequence[0]&&this.jsRunSequence[0].status=="failed"){var d=this;var a=document.createElement("script");a.src=this.jsRunSequence[0].path;a.type="text/javascript";this.jsRunSequence[0].status="loading";a.onload=function(){d.jsRunSequence.shift();if(d.jsRunSequence.length>0){d.runjs()}};document.body.appendChild(a)}}};lsloader.tagLoad=function(b,a){this.jsRunSequence.push({name:a,code:"",path:b,status:"failed"});this.runjs()};lsloader.jsfallback=function(c,b){if(!!this.jsnamemap[b]){return}else{this.jsnamemap[b]=b}for(var a in this.jsRunSequence){if(this.jsRunSequence[a].name==b){this.jsRunSequence[a].code="";this.jsRunSequence[a].status="failed";this.jsRunSequence[a].path=c}}this.runjs()};lsloader.cssfallback=function(e,c,b){if(!!this.cssnamemap[c]){return}else{this.cssnamemap[c]=1}var d=document.createElement("link");d.type="text/css";d.href=e;d.rel="stylesheet";d.onload=d.onerror=b;var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(d,a)};lsloader.runInlineScript=function(c,b){var a=document.getElementById(b).innerText;this.jsRunSequence.push({name:c,code:a});this.runjs()}})();</script>
+
+    <!-- Import queue -->
+    <script>function Queue(){this.dataStore=[];this.offer=b;this.poll=d;this.execNext=a;this.debug=false;this.startDebug=c;function b(e){if(this.debug){console.log("Offered a Queued Function.")}if(typeof e==="function"){this.dataStore.push(e)}else{console.log("You must offer a function.")}}function d(){if(this.debug){console.log("Polled a Queued Function.")}return this.dataStore.shift()}function a(){var e=this.poll();if(e!==undefined){if(this.debug){console.log("Run a Queued Function.")}e()}}function c(){this.debug=true}}var queue=new Queue();</script>
+
+    <!-- Import CSS -->
+    
+        <style id="material_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("material_css","/css/material.min.css?Z7a72R1E4SxzBKR/WGctOA==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+        <style id="style_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("style_css","/css/style.min.css?xNiy1WVgrq3wGMe17SiWvQ==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+
+        
+
+    
+
+    
+
+    <!-- Config CSS -->
+<style>
+#post-content hr {
+  height: 20px;
+  margin: 15px auto;
+  background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAI8AAAAZBAMAAAD6cmD+AAAAJFBMVEX////+/v7u7u79/f38/Pz19fX5+fnm5ubr6+vg4ODz8/PX19fmfbrEAAABVklEQVQYGb3AsWoUQRjA8f/HN06R6ht33cJKDhSNzR4rCKlmCdEz1QkHkm4lgeSsoics6VRyQiwDJ3I2erHIvYJP5xPMRRjIjxvUUZ1V7JLLSegqXhu5YomeXXkhWz18+WEpZJPC9+36d0GuyPGpbC07cjk96yp7ckiuOP3or9/eWfIfhJQGc73sP5yzPiqcsVFgg8DzmR91q8O7C4uOBAkGIEZCAb7v9h6J/2wXEzESDASsMBK0iCezajUuOIn3vxNI0VqB/ceDhO0oT52fq3U7p+7C3g0Svgz+AKZGQiv1m/O4Kutno6MXi8aTUrYOCIQEtK4um53z0s/14IEnJOyCsFHAXn3Sax2N9y6JLUlq3MT/kHvbX/VggpFnOisHE/+3FRNyBN9T2PoKMSGH1sfv3dYykqvwZd+tf4VAptJs+m3h1BCyyFCbn2MactUMZeLUuDX/AFJQRNLkIJPDAAAAAElFTkSuQmCC')
+  center center no-repeat;
+}
+main {
+  text-shadow: rgba(0, 0, 0, 0.2) 0px 0px 1px;
+  font-weight: 500;
+}
+#scheme-Paradox .material-layout .mdl-card {
+  border-radius: 0px;
+}
+table {
+  display: table!important;
+}
+#post-content p {
+  overflow: unset!important;
+  font-weight: 500;
+  font-family: "Hiragino Sans GB W3";
+}
+.mdl-color-text--grey-700 {
+  color: #424242!important;
+}
+blockquote strong {
+  font-weight: 600!important;
+}
+#scheme-Paradox .material-layout .mdl-card__supporting-text {
+  font-weight: 500;
+  font-family: "Hiragino Sans GB W3";
+}
+</style>
+<!-- Other Styles -->
+<style>
+  body, html {
+    font-family: Raleway, Helvetica, 'Microsoft Yahei', '微软雅黑', Arial, sans-serif;;
+    overflow-x: hidden !important;
+  }
+  
+  code {
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  }
+
+  a {
+    color: #4b48d6;
+  }
+
+  .mdl-card__media,
+  #search-label,
+  #search-form-label:after,
+  #scheme-Paradox .hot_tags-count,
+  #scheme-Paradox .sidebar_archives-count,
+  #scheme-Paradox .sidebar-colored .sidebar-header,
+  #scheme-Paradox .sidebar-colored .sidebar-badge{
+    background-color: #5755d9 !important;
+  }
+
+  /* Sidebar User Drop Down Menu Text Color */
+  #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:hover,
+  #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:focus {
+    color: #5755d9 !important;
+  }
+
+  #post_entry-right-info,
+  .sidebar-colored .sidebar-nav li:hover > a,
+  .sidebar-colored .sidebar-nav li:hover > a i,
+  .sidebar-colored .sidebar-nav li > a:hover,
+  .sidebar-colored .sidebar-nav li > a:hover i,
+  .sidebar-colored .sidebar-nav li > a:focus i,
+  .sidebar-colored .sidebar-nav > .open > a,
+  .sidebar-colored .sidebar-nav > .open > a:hover,
+  .sidebar-colored .sidebar-nav > .open > a:focus,
+  #ds-reset #ds-ctx .ds-ctx-entry .ds-ctx-head a {
+    color: #5755d9 !important;
+  }
+
+  .toTop {
+    background: #757575 !important;
+  }
+
+  .material-layout .material-post>.material-nav,
+  .material-layout .material-index>.material-nav,
+  .material-nav a {
+    color: #757575;
+  }
+
+  #scheme-Paradox .MD-burger-layer {
+    background-color: #757575;
+  }
+
+  #scheme-Paradox #post-toc-trigger-btn {
+    color: #757575;
+  }
+
+  .post-toc a:hover {
+    color: #4b48d6;
+    text-decoration: underline;
+  }
+	.pagination .page-item a:hover { 
+	color: #5755d9; 
+	}
+</style>
+
+
+<!-- Theme Background Related-->
+
+	<style>
+      body{
+        background-color: #f8f9fa;
+      }
+
+      /* blog_info bottom background */
+      #scheme-Paradox .material-layout .something-else .mdl-card__supporting-text{
+        background-color: #fff;
+      }
+	  
+	  .bg{
+        background-image: url(/images/scenery.jpg);
+      }
+    </style>
+	
+
+
+
+
+<!-- Fade Effect -->
+
+    <style>
+      .fade {
+        transition: all 800ms linear;
+        -webkit-transform: translate3d(0,0,0);
+        -moz-transform: translate3d(0,0,0);
+        -ms-transform: translate3d(0,0,0);
+        -o-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+        opacity: 1;
+      }
+
+      .fade.out{
+        opacity: 0;
+      }
+    </style>
+
+
+<!-- Import Font -->
+<!-- Import Roboto -->
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+
+
+<!-- Import Material Icons -->
+
+
+    <style id="material_icons"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("material_icons","/css/material-icons.css?pqhB/Rd/ab0H2+kZp0RDmw==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+
+
+
+
+    <!-- Import jQuery -->
+    
+        <script>lsloader.load("jq_js","/js/jquery.min.js?ezyEvm8ST5CGfpA+kFFi1g==", true)</script>
+    
+
+    <!-- WebAPP Icons -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="Declan&#39;s Blog">
+    <meta name="msapplication-starturl" content="https://taohongyao.github.io/posts/%E5%A4%A7%E8%84%91%E7%A9%BA%E7%A9%BA%E6%85%8C%E7%9A%84%E4%B8%80%E6%89%B9/">
+    <meta name="msapplication-navbutton-color" content="#5755d9">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Declan&#39;s Blog">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon" href="/images/sunflower.jpg">
+
+    <!-- Site Verification -->
+    
+    
+
+    <!-- RSS -->
+    
+
+
+
+	<!-- live2d plane -->
+
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css"/>
+		<script src="/live2d_plane/autoload.js"></script>
+
+    <!-- The Open Graph protocol -->
+    <meta property="og:url" content="https://taohongyao.github.io/posts/%E5%A4%A7%E8%84%91%E7%A9%BA%E7%A9%BA%E6%85%8C%E7%9A%84%E4%B8%80%E6%89%B9/">
+    <meta property="og:type" content="blog">
+    <meta property="og:title" content="大脑空空慌的一批 | Declan&#39;s Blog">
+    <meta property="og:image" content="/images/sunflower.jpg">
+    <meta property="og:description" content="Studying is the best way of survive（revenge）">
+    <meta property="og:article:tag" content="Solar"> 
+
+    
+        <meta property="article:published_time" content="Fri May 10 2019 23:50:10 GMT-0400">
+        <meta property="article:modified_time" content="Tue Apr 16 2024 23:39:57 GMT-0400">
+    
+
+    <!-- The Twitter Card protocol -->
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Add canonical link for SEO -->
+    
+        <link rel="canonical" href="https://taohongyao.github.io/posts/%E5%A4%A7%E8%84%91%E7%A9%BA%E7%A9%BA%E6%85%8C%E7%9A%84%E4%B8%80%E6%89%B9/index.html" />
+    
+
+    <!-- Structured-data for SEO -->
+    
+        
+
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": "https://taohongyao.github.io/posts/%E5%A4%A7%E8%84%91%E7%A9%BA%E7%A9%BA%E6%85%8C%E7%9A%84%E4%B8%80%E6%89%B9/index.html",
+    "headline": "大脑空空慌的一批",
+    "datePublished": "Fri May 10 2019 23:50:10 GMT-0400",
+    "dateModified": "Tue Apr 16 2024 23:39:57 GMT-0400",
+    "author": {
+        "@type": "Person",
+        "name": "DeclanTao",
+        "image": {
+            "@type": "ImageObject",
+            "url": "/img/avatar3.jpeg"
+        },
+        "description": "迷途经累劫，悟则刹那间。"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "Declan&#39;s Blog",
+        "logo": {
+            "@type":"ImageObject",
+            "url": "/images/sunflower.jpg"
+        }
+    },
+    "keywords": ",Solar",
+    "description": "Studying is the best way of survive（revenge）",
+}
+</script>
+
+
+    
+
+    <!-- Analytics -->
+    
+        <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-116677416-1', 'auto');ga('send', 'pageview');
+</script>
+    
+    
+        <script>
+    var _hmt = _hmt || [];
+    (function() {var hm = document.createElement('script');
+    hm.src = 'https://hm.baidu.com/hm.js?3bb23ae6d5dd7b6daa3eeaa021d5ca2d';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+    
+    
+
+    <!-- Custom Head -->
+    
+
+<meta name="generator" content="Hexo 7.1.1"></head>
+
+
+
+<!-- live2d  -->
+
+<!-- aplayer -->
+<div id="flexaplayer"></div>
+<script>
+    const ap1 = new APlayer({
+        container: document.getElementById('flexaplayer'),
+        fixed: true,
+        theme: '#8785de',
+        audio: [{
+            name: 'アイロニ',
+            artist: '4円',
+            url: '/music_data/onlymp3.app - 4 - High Quality Lyrics Touching tk -192-1713487398603.mp3',
+            cover: 'http://p2.music.126.net/6Jd98bMPGi8VRsh0QeEeoA==/109951163028868049.jpg',
+            theme: '#46718b'
+        },
+        {
+            name: 'ぼくらのレットイットビー',                         
+            artist: 'りょーくん',                       
+            url: '/music_data/onlymp3.app -  KK-192-1713486938648.mp3',    
+            cover: 'http://p2.music.126.net/iVtypj0U_kJahLrpSBu7XA==/109951163597920598.jpg', 
+			lrc: '/music_data/ぼくらのレットイットビー.lrc',
+            theme: '#46718b' 
+        },
+        ]
+    });
+ 
+</script>
+
+<body id="scheme-Paradox" class="lazy">
+    <div id="blog-background" class="bg bg-blur"></div>
+    <div class="material-layout  mdl-js-layout has-drawer is-upgraded">
+        
+
+        <!-- Main Container -->
+        <main class="material-layout__content" id="main">
+
+            <!-- Top Anchor -->
+            <div id="top"></div>
+
+            
+            <!-- Hamburger Button -->
+            <button class="MD-burger-icon sidebar-toggle">
+                <span class="MD-burger-layer"></span>
+            </button>
+            
+
+            <!-- Post TOC -->
+
+    
+    <!-- Back Button -->
+    <!--
+    <div class="material-back" id="backhome-div" tabindex="0">
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+           href="#" onclick="window.history.back();return false;"
+           target="_self"
+           role="button"
+           data-upgraded=",MaterialButton,MaterialRipple">
+            <i class="material-icons" role="presentation">arrow_back</i>
+            <span class="mdl-button__ripple-container">
+                <span class="mdl-ripple"></span>
+            </span>
+        </a>
+    </div>
+    -->
+
+
+    <!-- Left aligned menu below button -->
+    
+    
+
+
+
+
+<!-- Layouts -->
+
+    <!-- Post Module -->
+    <div class="material-post_container">
+
+        <div class="material-post mdl-grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col bg-gray-opacity">
+
+                <!-- Post Header(Thumbnail & Title) -->
+                
+    <!-- Paradox Post Header -->
+    
+        <!-- Custom Thumbnail -->
+        <div class="post_thumbnail-custom mdl-card__media mdl-color-text--grey-50 " style="background-image:url(/images/pximg/16848987_p0_master1200.jpg)">
+    
+         <!--   <p class="article-headline-p">
+                大脑空空慌的一批
+            </p>
+		-->
+        </div>
+		<div class="card-header bg-gray-dark-opacity">
+            <p class="article-headline-p">
+                大脑空空慌的一批
+            </p>
+			<div class="divider"></div>
+			<div>
+				
+				
+				<ul class="post-tags-list">
+					<li class="post-tags-list-item">
+					<a class="post-tags-list-none-link" href="/tags/Solar/" rel="tag">Solar</a>
+				</ul>
+				
+			
+			</div>
+		</div>
+
+
+
+
+<!-- custom post's background -->
+
+
+
+
+                <!-- Post Content -->
+                <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
+
+    
+        <div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
+  <script id="hbeData" type="hbeData" data-hmacdigest="27ade2adde1abc8a40ed141d92c2a18141e5a9b65053b7cb95fffc78806dd30c">7ad58fffb816d7bc8013a2b82a1367de2d80431272bc51fd7bab265b6163d6a22f5ee5a3aff0a421611a165df74af90a36f83c97cecd2e8a0b408af664bb37b5d353860442f508aefb030607dbac0249f339c8f2dc28749dcabdec3e599ab8f0f511afda2e485f59701e8946ce1f35d304bad36e3286a833ab02a1010f5519cd93e0412d7ff98acdac977759bec23ee743610ccce32101e6327ce2ff6d75371f74892ff5122a964afb7db0d90ea73415d60f23c333d97c16514c068f7a499065bc6e53a9fbd62f6cce24f80f4b09b6c777f9ee04f430ce71ff4bcc46b2d742fb2e8b63bf3891ad92179d4436b7e12e7f68e098609f258cff8433fbfc171679e0134a34b70ac60e592797f3128ff8a4acff572a0b03f55df26c996c807d13a960dd37db55ed5a902a1830cd0aa2e774bdf68ebf1b3a1d3e30ae21c70d71b3bf4efbb98997a08d223ae0ca8c78e031e8f9af1a295286d86cd960830647f123664a6a7702dff0e5813411631432e5995c174a095e4130c9c7767c8b4029b9c4637f6761d37c4efd1801784639fe584e8ea49b1aee77e9f51fd15d245699da50be96bd40ba714b1b600edce881e5347a2c1210ef8c750c060d856f2eab6f0f6045f4391b8c914388fbf1863c92c6502ab7e37e216a6904ede5e3329f61191f048128496cb5eeff00ac5c4e08ca5e06b8abfe405fcc4f79d9e7ebae8f51376a699f36ea6940f2cc5ccc53d974b95c872c6bbaaf10afebb872a16446522947a5eca75b5eac82784981d0ae09fd4a384f19dc0418bf92ec6ad8cdb3900f8e677dd00ef25bb124f9ab4caba30958d514ddb809348744e385e539c04cb504363c53de8e1a70aa470230d817accad85dad3a7f6600556bfacea1c71bf84e6568fefc866995af50046e1efb70688e066b32c7c497c9b79911f90852c396883ca4263b3fa4c66e4179a68ee057721911819618990f9974d3c2f616884d648e08060927a94735f5de36ea5531901ef63f8d44afa58f2b70cdfeacfaee76fb8ae329554d8b296f8903d48986920c9a8bf0b329d0b9d27c3b1ce40c5b825c58af296060bd8530b5a07dd6d94b92ec1ba2fc4dd5f1edacbf2fd3d00aa2d4b133f38c7b393cd3c72e3c8858d4852bf2d541536e280c70a3c60a3330a219b39bbd804246e05692e450a50339ae080ff46168767c9158eed529deebb5f4ce27f5271e6c31dff795d7821f917cd625f972dca285347db4dd0117eb9b0d02ebdcf02c8d8696fa84d0e891619669d94bfa9334df28c8119ed75e391a1a450e98560fca8f98a5549f509ad4de014b5183f7f752462f091cad9b11068a0652f42d57c998a79497d8121bcc8e611b253708b574934595c168e7683d538b8080e3949697529303af89ccde98a2e7f23cbf84cfe4c598ca87df0ea4782cbccd22588dc5ef7ba48eb60430774031b5133eca3af59f6890c5060fdb2e692c6c9898db38e137d8bc68b05848a46ac4feaf850f6271ba5ee3ed7465fdbd466128ab1e23a8115d73a681ae5f1bac875177a486c936697d8f7b60b7722164c8044e20c8a406758bd49f1f17534e478af5c7a8c878ebf05851dbc0f098c2c2d76e9dd251ecf19895920fb3e595429827a630c6e5249a31ceb67459742aca526a0a185ac40a60a74cb9d01fa90fa52361a1df05cfb885da47ae2691bd343088173cbc5a542a2f18e62c8365ba1bf2c0778a14c87c655185af58b30d50fb95dbcc6ed8814fbd8cfd83e26a17d03737cc9fbc1dbde6d1d4732095226c72bd14d22be88bddbbf06e420aaed61e64aa20f81b3a9c213f2b4deb248890164cb77ccfdf8bf02aafbdf58e471b369ae03b99eac783da3219813730599932cc95df34761545b2810d4fb1f4984198770c9e2f491a024563964751873852bd714355b74214ef337fd3fdd5482a9cccd4a64713ccb06bd33025461ce94499857cd02ee1d928379f5ab236fb138ae581ad3b13f05c2c2672013639c133b8c45f058d42d94bdeba17125fb271cecd0d7f9322a36b90d545bc316bef96d3bb950c4b8233816cca3056e75ceb001e7c328c364916bed8af5c349217d790fb504daec5096ea9cff28bce29c0ea939bc70910d576dff2b6d68b3d5939252930ba6ec859dccb5c0e724b7e6fcea3f79359ec053f00bd6f33064bf4abab0d929fb4ea6ddb2ae091cf01e2c98e087d2a98a35590eebfb826fec6daf6146b5e8472742ee745f16a5bbc07f9c2ef3f08488b8b10aa45d3bdba103934c5df82fe5032d21ca32d91efc335d40aacefabae36da2d81e9abe1845f807f15b2078d24458009c9080035f739206d5830d9d2470febed10810c172b98295835c541d5876268fcd3f5fb47ccb250edc2c217f48255cddc36998913ff9135217ee9245d13a4bb15412dc6592b7ed46c51171899ff3fdf1872682bef975e6d5c3ba7ec491469767c0823f3fb115d82308bb5d3a111a88cd5996a61c1dcf2aced9cf7204de3bab8229cc7379c132017de60271f50bca4fba4c6b7d379d2e2f9674f57e6d9e586eb47c028adf047ac16731b19d8e9bf9add5e12ccb5c6eda76f831ad297b2c67d20fb0aff67167fda20f185e70b16cab6ae3f262d1aee28113a5cf932cfe2cf48fb704c718eac49300cc907cbf97225d708afa483551797c142c00c2f2d3b70ed91912993909425910ce8699cdd062ed74ad3692f6ba61d903975b218102a6fc2c6e8940a81b28ada823e1ab7ec98d1c02609dcf9c17186d815dc373094c5a06d6ed21bb91e058504d9e5815babf4e58dcb88e41aefaf46537e3cc0090ac4f9178421c98c2fe7b704cbc3ca0cafd75f10c7c9b97b763f2cca50bc45a3fa2871a00c9fab251686e046ae55b405fd8357145a46373d9f57d7d851680c8ce19ac53e29a43aa7f3bcbc40b8c09f8ef8d9da44b1ae91150a09e80c0d8ccd659abb2b787aed64c706d15f8009598ad53f4e5e99d512ceaf4290ca045830d10628b2285766e5a6161e99c67c8e615de65d538e9e68a00a7bc8dbddf72147569922b6ed746f6363f4bbc9c1ced24062c02bafa401d06e05c1472a6a0eb3f8abe60a2e3a90fbd9d726f020cc140116ea9fb0403f2cb87312f4ac3680c9c6ce549c0a8193aea95b762ba32308f7a2d4aaec9b8afcd3dd92567893616b3fceb99f08d0747c6ec7669b26dc9e3eac7f736ad393f2a57b6578d504785514afa3022a93e4848cedfd56cd4643205288a1c5aefed19768ba91389627587f3cee04ce2e7cd1e70264cf2d82e0fe2763387170e8ce5c461f1c88a9fb5c20366435b17a6269aacbb918af336f8b18638c61bf35d2aa6df78cdbfa1b13eb8ae24c1dddfb53e3c86d84185fdbf900a981866633ded89ec1f74ac029eb956020b3b23076faa4a4e0939d1a80c9a06208079b0ce26d7eb1825c4904664bdde2861e9221559b099305228a8ca32dac1de9ed8888f075ecb4ff1e8de43ae7352218c25fa4417e78e4644fcef56e03e10390fa11907ee03997ffb35ce334e4005d40db7103f41912d6f0e9d759cbe28b6d92f6a44598a91b7032e2dd0ed02e8a79c6b95731e02c80fd69c4a2a485e454c0de77a770bb79eef4ed7e9486063d5218c07682079c2ee72c7b4d81a1ea7596862578598071a263063a1c03e02597152867d7bd4830718ff8969a8ec3bb6f5a21223e003e161fa745c8cd8337335b47f2da1b155d0994a9fca243efedbed386e19fa642ebd3cc008898681bd4c2c56ce537caf894aa38d922d30ce446249da936d72ad1b1316cb4314851ac613b49e949701b3a19f4ee82da639cacff48fee38724346972867954cfe04720acb9f86c0a339e1a98e17ad6cb2adad9861ba2a753d9ceeb9d116fb6eedde0df027230209787327560367e7e498930b7d29aedfe14a3dea6b37b198fce40a2078fb1b4080ff101416c2e1794f1cc1df8946587ae6f6cc17f79bbc6217aa3814e9132afe5f41eb4b6ec3fd7553e7c926943704eca571c977958ded1550d1f401353a5c8bf54a0775b58e640584647f55e744b8af9159b8d618d0a6a1df7bd59de333887d853e1f149c8e2fa5898a83b58785c53826714eb9b1a3eab077017c89f1bb4d0c565004f7f1cbc87ce7bd9aa36b2354c542bf2bb339fa41137d9e637323207f9691f29bbfeb288252e6e93c9fe942e0eb7175fc60fdb67358d02f6d1c7c3814e872ae20742a25ae7936b51f48ed0d7c07d0244dabbfce02eb292232ac95221893667021584fc57515904e379ae194f9a51cc1e8ff9dc44c3ca2ec9c580aa3e6848e1f484e986c937090d56ccaebb095dfb686e43d95360358b6b1d6c525206fe9869134181b961385a4dbd8eb670e8aa342630309163ee257b4a1a8d954156fa4a25352adf0f2510a878ee33b3ef89d17e6410bfe2a81ea2b03188efd65f711965fd29f57dd8fe89527a04680663541b2f20edc2cdf9fc637eee7159f4dad3e3fc91cf9482685d9e235e8d2b643629e9b02665feb20fbf1f24af483f8fd946a223206976ddc090e7917f413876604a6b20b8e379f61aa88f3d097013c66422113f913bdd27bba139ec1ab15955c7c227bd6b2dbe72d63f79ea0406865edccf2006d0dc2bbae920c723dc7969512248cd99a53be4619ae476ff8bc46051cd4bcc08b2b693384d33961e335c2751ae2f0a71c62865678785368ec0de620cbef0c9f4b252cc20343e05f603ce4784811eebed700d1642263a7fc4df76deb6e553e23ef033b477ef20c970cf1dfe47e73452ad48f0101d4269661e982bf00ea2171c8771179ef094462c107999e74bf1203e44e7974889b165bbb1b468e55bb816849ced4b544c5f3193009854ca25bb50c72ab512b3dff15eff5b22ae2d49c8550fc3f1ed78956d3ccf4bc8f17cfb97aeac78fad8cd9683985b63b7d0af4b791a72004c9571c5e878a27e116c2b49fac0b183b3bb1806609a1514b168f66fc95271200504e54ad2b6b14b4eff4ee505b0ce8574358f20001e1a785d372c550b5eb2fc54e1e77f408068ba4c2e9ed440c00bafd3775181c1f9f4da4440c2ae56e1ad7d5e37f3562247726811683cdbf85e45d052c456660a95aff3a330187e924cced6c6a61cff3f8b9697</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-default">
+      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-default">输入密码将开启新世界的大门</span>
+      </label>
+    </div>
+  </div>
+</div>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">
+        
+                <blockquote style="margin: 2em 0 0;padding: 0.5em 1em;border-left: 3px solid #F44336;background-color: #F5F5F5;list-style: none;">
+                    <p><b>本文标题：</b> 大脑空空慌的一批
+                    <br>
+                        <b>最后更新：</b>2024 年 04 月 16 日 - 23:04<br>
+                        <b>本文链接：</b><a href="https://taohongyao.github.io/posts/%E5%A4%A7%E8%84%91%E7%A9%BA%E7%A9%BA%E6%85%8C%E7%9A%84%E4%B8%80%E6%89%B9/">https://taohongyao.github.io/posts/%E5%A4%A7%E8%84%91%E7%A9%BA%E7%A9%BA%E6%85%8C%E7%9A%84%E4%B8%80%E6%89%B9/</a>                   
+                        <br>
+                         
+                            <b>本文采用：署名-非商业性使用-禁止演绎 4.0 国际</b> 协议进行许可，阅读 <a rel='nofollow noopener' href='https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh' target='_blank'>相关说明</a>
+                        
+                    </p>
+                </blockquote>
+        
+    
+
+    
+</div>
+
+                
+
+                
+                    <!-- Paradox Post Info -->
+                    <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta bg-gray-dark-opacity">
+
+    <!-- Author Avatar -->
+    <div id="author-avatar">
+        <img src="/img/avatar3.jpeg" width="72px" height="72px" alt="Author Avatar"/>
+    </div>
+    <!-- Author Name & Date -->
+    <div style="opacity: 0.7;">
+        <strong style="font-weight: 600;">DeclanTao</strong>
+        <span>发表于 2019-05-10 23:50 </span>
+		<span>
+			阅读次数&nbsp;
+			<span id="/posts/%E5%A4%A7%E8%84%91%E7%A9%BA%E7%A9%BA%E6%85%8C%E7%9A%84%E4%B8%80%E6%89%B9/" class="leancloud-views_num" data-flag-title="大脑空空慌的一批">
+		</span>
+		</span>
+
+    </div>
+
+    <div class="section-spacer"></div>
+
+    <!-- Favorite -->
+    <!--
+        <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
+            <i class="material-icons" role="presentation">favorite</i>
+            <span class="visuallyhidden">favorites</span>
+        </button>
+    -->
+
+    <!-- Qrcode -->
+    
+        <button id="article-functions-qrcode-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">devices other</i>
+    <span class="visuallyhidden">devices other</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-qrcode-button">
+    <!-- <li class="mdl-menu__item">在其它设备中阅读本文章</li> -->
+    
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASYAAAEmCAAAAADqr2IGAAAELElEQVR42u3aW3LbMBAEQN3/0skFImVml05EsPHlkmURaLkK+3r9soL1QoAJEyZMmDBZmDBhwvT1TK94/eGD3vz23fuLLcZP/PzOzRkxYcKECdNJTO2m843u0T/vKoEbnhETJkyYMB3HlDz488/tRZ4/Pb/Oky81+itMmDBhwvRgpndbSY6Xp6bt05P0GBMmTJgwYZo9ZpYwtxf8ngATJkyYMD2ZKTnwprzbNiyTVmVyiv9QC8eECRMmTF/GtLme7/LzP51vwoQJEyZMX8M0Gx7NR0XbAZ2k8Tl7vT4pJkyYMGE6gim/OPMEtR3QmQ2zXlVQxoQJEyZMT2PKQ4GrtpuUlTfjsG37FhMmTJgwncqUJ6tJiLBpgm5GdtpE/e1+MGHChAnTQUxtWNBuvU1i99f/LGnHhAkTJkynMrVXezvoM/u0Nq1tw4u/OGDChAkTpuOYZtvNy6l5kHHtF5mnypgwYcKE6TymvG25T0E3ZeI2bc4/PyryYsKECROm2zJdNVjTJqJ5kJFf/8kXVgQ0mDBhwoTpIKZ9Y7IdymmP1A4A5Sk3JkyYMGE6m2m29gOjeUm3TcjblmfUzsSECRMmTLdlyq/YvGW4GfdJCPKibU5WVwgwYcKECdOtmJLybpv65p/ZBhlXpd+rCgEmTJgwYboh0yzJbI/dDgbVbcjRUzBhwoQJ06lMmzR4ds3nzcjPr7Ql5joAwoQJEyZMBzFdW1rdjODkyfN+3Kce3MGECRMmTLdlKgY3R0M5ySGvbVj+YNyECRMmTJhuxbQftWlT1k0pOW9ntp+PCRMmTJiexjRLYpOy7FVNzc8Xfx5qvN0zJkyYMGE6gqkd4pmVU2e/vfb9lxV5MWHChAnTrZjaAdB2pCa5ttv0O0+D8zNGcRMmTJgwYboh0yZFnIULyTWfD7DmX0MdOmDChAkTpoOYLkgUR6Or+/Zky7Qq8mLChAkTptsybZLh2YGvuravKgpfFjdhwoQJE6avZMqvzM1ITTKa83OXfV16xoQJEyZMRzAl13AeFuRALdbPNVxXgzuYMGHChOkmTLMkcx807JuRbRr/K16YMGHChOkMps3mEqa2TNxe/7O0Nio6Y8KECROmg5japLQt4+aHaUu9r3jV6TomTJgwYTqCqeXYDMe0R2pxZ2Xlup2JCRMmTJhuxdSu2UBqnprORl3zQnAecGDChAkTpjOYNqnjahOjgCMvRuefXw/uYMKECROmGzJdNf6SbKhtT85S5TYgwIQJEyZMT2DaX6izEvAsnd60NqN/DkyYMGHC9Him/JVZ0DDDas/1tgyNCRMmTJgezDQLHWbhRfu3m71hwoQJE6azmZLL9fMrm1Bgc/236XH0XEyYMGHCdBBT2zLctA/bIKBtRiZjQ8k/CiZMmDBhOoPJigICCxMmTJgwYcJkYcKE6VvWb4yV2IjGtYbIAAAAAElFTkSuQmCC">
+    
+</ul>
+
+    
+
+    <!-- Tags (bookmark) -->
+	<!--
+    
+    <button id="article-functions-viewtags-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+        <i class="material-icons" role="presentation">bookmark</i>
+        <span class="visuallyhidden">bookmark</span>
+    </button>
+    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
+        <li class="mdl-menu__item">
+        <a class="post_tag-none-link" href="/tags/Solar/" rel="tag">Solar</a>
+    </ul>
+    
+	-->
+    <!-- Share -->
+    
+        <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">share</i>
+    <span class="visuallyhidden">share</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
+    
+    <!-- Leancloud Views -->
+		<!--
+			<a class="post_share-link" href="#">
+				<li class="mdl-menu__item">
+					<span id="/posts/%E5%A4%A7%E8%84%91%E7%A9%BA%E7%A9%BA%E6%85%8C%E7%9A%84%E4%B8%80%E6%89%B9/" class="leancloud-views_num" data-flag-title="大脑空空慌的一批">
+     &nbsp;浏览量
+</span>
+
+				</li>
+			</a>
+		-->
+    
+
+    
+
+    <!-- Share Weibo -->
+    
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=大脑空空慌的一批&url=https://taohongyao.github.io/posts/%E5%A4%A7%E8%84%91%E7%A9%BA%E7%A9%BA%E6%85%8C%E7%9A%84%E4%B8%80%E6%89%B9/index.html&pic=https://taohongyao.github.io/images/sunflower.jpg&searchPic=false&style=simple" target="_blank">
+            <li class="mdl-menu__item">
+                分享到微博
+            </li>
+        </a>
+    
+
+    <!-- Share Twitter -->
+    
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=大脑空空慌的一批&url=https://taohongyao.github.io/posts/%E5%A4%A7%E8%84%91%E7%A9%BA%E7%A9%BA%E6%85%8C%E7%9A%84%E4%B8%80%E6%89%B9/index.html&via=DeclanTao" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Twitter
+            </li>
+        </a>
+    
+
+    <!-- Share Facebook -->
+    
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=https://taohongyao.github.io/posts/%E5%A4%A7%E8%84%91%E7%A9%BA%E7%A9%BA%E6%85%8C%E7%9A%84%E4%B8%80%E6%89%B9/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Facebook
+            </li>
+        </a>
+    
+
+    <!-- Share Google+ -->
+    
+        <a class="post_share-link" href="https://plus.google.com/share?url=https://taohongyao.github.io/posts/%E5%A4%A7%E8%84%91%E7%A9%BA%E7%A9%BA%E6%85%8C%E7%9A%84%E4%B8%80%E6%89%B9/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Google+
+            </li>
+        </a>
+    
+
+    <!-- Share LinkedIn -->
+    
+
+    <!-- Share QQ -->
+    
+        <a class="post_share-link" href="http://connect.qq.com/widget/shareqq/index.html?site=Declan&#39;s Blog&title=大脑空空慌的一批&summary=Declan&#39;s blog&pics=https://taohongyao.github.io/images/sunflower.jpg&url=https://taohongyao.github.io/posts/%E5%A4%A7%E8%84%91%E7%A9%BA%E7%A9%BA%E6%85%8C%E7%9A%84%E4%B8%80%E6%89%B9/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 QQ
+            </li>
+        </a>
+    
+
+    <!-- Share Telegram -->
+    
+</ul>
+
+    
+	
+
+</div>
+<div class="divider m-0"></div>
+
+                
+				<!-- Post Prev & Next Nav -->
+				<div class="post-nav px-2 bg-gray-dark-opacity">
+	<ul class="pagination">
+		
+		
+			<li class="page-item page-next">
+				<a href="/posts/%E6%94%B9%E4%BD%9C/">
+					<div class="page-item-title h5">
+						<i class="icon material-icons casino-icons">arrow_forward</i>
+						<span>下一篇</span>
+						
+					</div>
+					<div class="page-item-subtitle">改作</div>
+				</a>
+			</li>
+		
+	</ul>
+</div>
+				
+                <!-- Post Comments -->
+                
+                    
+    <div id="waline">
+    
+</div>
+<link
+rel="stylesheet"
+href="https://unpkg.com/@waline/client@v3/dist/waline.css"
+/>
+<style>
+    :root {
+        --waline-font-size: 1.3rem;
+        --waline-theme-color: #9627ae;
+        --waline-active-color: #822ecc;
+    }
+    #waline{
+        padding: 1pc;
+    }
+    .wl-header input{
+        font-size: .825em;
+    }
+</style>
+<script type="module">
+    import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
+
+    init({
+      el: '#waline',
+      serverURL: 'https://comment.declantea.com/',
+    });
+</script>
+
+
+
+
+
+                
+            </div>
+
+        </div>
+    </div>
+
+
+
+            
+            <!-- Overlay For Active Sidebar -->
+<div class="sidebar-overlay"></div>
+
+<!-- Material sidebar -->
+<aside id="sidebar" class="sidebar sidebar-colored sidebar-fixed-left" role="navigation">
+    <div id="sidebar-main">
+        <!-- Sidebar Header -->
+        <div class="sidebar-header header-cover" style="background-image: url(/images/boatgirl.jpg);">
+    <!-- Top bar -->
+    <div class="top-bar"></div>
+
+    <!-- Sidebar toggle button -->
+    <button type="button" class="sidebar-toggle mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" style="display: initial;" data-upgraded=",MaterialButton,MaterialRipple">
+        <i class="material-icons">clear_all</i>
+        <span class="mdl-button__ripple-container">
+            <span class="mdl-ripple">
+            </span>
+        </span>
+    </button>
+
+    <!-- Sidebar Avatar -->
+    <div class="sidebar-image">
+        <img src="/img/avatar3.jpeg" alt="DeclanTao's avatar">
+    </div>
+
+    <!-- Sidebar Email -->
+    <a data-toggle="dropdown" class="sidebar-brand" href="#settings-dropdown">
+        taohongyao@gmail.com
+        <b class="caret"></b>
+    </a>
+</div>
+
+
+        <!-- Sidebar Navigation  -->
+        <ul class="nav sidebar-nav">
+    <!-- User dropdown  -->
+    <li class="dropdown">
+        <ul id="settings-dropdown" class="dropdown-menu">
+            
+                <li>
+                    <a href="#" target="_blank" title="Email Me">
+                        
+                            <i class="material-icons sidebar-material-icons sidebar-indent-left1pc-element">email</i>
+                        
+                        Email Me
+                    </a>
+                </li>
+            
+        </ul>
+    </li>
+
+    <!-- Homepage -->
+    
+        <li id="sidebar-first-li">
+            <a href="/">
+                
+                    <i class="material-icons sidebar-material-icons">home</i>
+                
+                主页
+            </a>
+        </li>
+        
+    
+
+    <!-- Archives  -->
+    
+        <li class="dropdown">
+            <a href="#" class="ripple-effect dropdown-toggle" data-toggle="dropdown">
+                
+                    <i class="material-icons sidebar-material-icons">inbox</i>
+                
+                    归档
+                <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+            <li>
+                <a class="sidebar_archives-link" href="/archives/2019/05/">五月 2019<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2019/04/">四月 2019<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/03/">三月 2018<span class="sidebar_archives-count">1</span></a>
+            </ul>
+        </li>
+        
+    
+
+    <!-- Categories  -->
+    
+        <li class="dropdown">
+            <a href="#" class="ripple-effect dropdown-toggle" data-toggle="dropdown">
+                
+                    <i class="material-icons sidebar-material-icons">chrome_reader_mode</i>
+                
+                分类
+                <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+                <li>
+                <a class="sidebar_archives-link" href="/categories/Linux/">Linux<span class="sidebar_archives-count">1</span></a>
+            </ul>
+        </li>
+        
+    
+
+    <!-- Pages  -->
+    
+        <li>
+            <a href="/timeline" title="时轴">
+                
+                    <i class="material-icons sidebar-material-icons">timeline</i>
+                
+                时轴
+            </a>
+        </li>
+        
+    
+        <li>
+            <a href="/tags" title="标签">
+                
+                    <i class="material-icons sidebar-material-icons">bookmark</i>
+                
+                标签
+            </a>
+        </li>
+        
+    
+        <li>
+            <a href="/music" title="音乐">
+                
+                    <i class="material-icons sidebar-material-icons">library_music</i>
+                
+                音乐
+            </a>
+        </li>
+        
+    
+        <li>
+            <a href="/gallery" title="图库">
+                
+                    <i class="material-icons sidebar-material-icons">photo</i>
+                
+                图库
+            </a>
+        </li>
+        
+    
+        <li>
+            <a href="/diary" title="日记">
+                
+                    <i class="material-icons sidebar-material-icons">favorite</i>
+                
+                日记
+            </a>
+        </li>
+        
+    
+        <li>
+            <a href="/about" title="关于">
+                
+                    <i class="material-icons sidebar-material-icons">person</i>
+                
+                关于
+            </a>
+        </li>
+        
+    
+
+    <!-- Article Number  -->
+    
+</ul>
+
+
+        <!-- Sidebar Footer -->
+        <!--  partial('_partial/sidebar-footer') -->
+    </div>
+
+    <!-- Sidebar Image -->
+    
+
+</aside>
+
+            
+
+            
+            <!-- Footer Top Button -->
+            <div id="back-to-top" class="toTop-wrap">
+    <a href="#top" class="toTop">
+        <i class="material-icons footer_top-i">expand_less</i>
+    </a>
+</div>
+
+            
+
+            <!--Footer-->
+<footer class="mdl-mini-footer" id="bottom">
+    
+        <!-- Paradox Footer Left Section -->
+        <div class="mdl-mini-footer--left-section sns-list">
+    <!-- Twitter -->
+    
+        <a href="https://twitter.com/BlackSpark_HY" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-twitter">
+                <span class="visuallyhidden">Twitter</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- Facebook -->
+    
+        <a href="https://www.facebook.com/hongyao.tao" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-facebook">
+                <span class="visuallyhidden">Facebook</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- Google + -->
+    
+        <a href="https://plus.google.com/102016051208530978230" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-gplus">
+                <span class="visuallyhidden">Google Plus</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- Weibo -->
+    
+
+    <!-- Instagram -->
+    
+
+    <!-- Tumblr -->
+    
+
+    <!-- Github -->
+    
+        <a href="https://github.com/taohongyao" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-github">
+                <span class="visuallyhidden">Github</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- LinkedIn -->
+    
+
+    <!-- Zhihu -->
+    
+
+    <!-- Bilibili -->
+    
+
+    <!-- Telegram -->
+    
+    
+    <!-- V2EX -->
+    
+</div>
+
+		
+		<div class="copyright-outer">
+        <!--Copyright-->
+			<div id="copyright">
+				
+				Copyright&nbsp;©<script type="text/javascript">var fd = new Date();document.write("&nbsp;" + fd.getFullYear());</script>
+				<i class="material-icons with-love" id="animate">favorite</i>
+				Declan's Blog
+				
+				
+			</div>
+			
+		</div>
+        <!-- Paradox Footer Right Section -->
+
+        <!--
+        I am glad you use this theme, the development is no so easy, I hope you can keep the copyright.
+        It will not impact the appearance and can give developers a lot of support :)
+
+        很高兴您使用该主题，开发不易，希望您可以保留一下版权声明。
+        它不会影响美观并可以给开发者很大的支持。 :)
+        -->
+
+        <div class="mdl-mini-footer--right-section">
+            <div>
+                <div class="footer-develop-div">Powered by <a href="https://hexo.io" target="_blank" class="footer-develop-a">Hexo</a></div>
+                <div class="footer-develop-div">Theme - <a href="https://github.com/viosey/hexo-theme-material" target="_blank" class="footer-develop-a">Material</a></div>
+            </div>
+        </div>
+    
+</footer>
+
+
+            <!-- Import JS File -->
+
+    <script>lsloader.load("lazyload_js","/js/lazyload.min.js?wgjW/HuQG9JDgvPDPoRAng==", true)</script>
+
+
+
+    <script>lsloader.load("js_js","/js/js.min.js?V/53wGualMuiPM3xoetD5Q==", true)</script>
+
+
+
+    <script>lsloader.load("np_js","/js/nprogress.js?pl3Qhb9lvqR1FlyLUna1Yw==", true)</script>
+
+
+<script type="text/ls-javascript" id="NProgress-script">
+    NProgress.configure({
+        showSpinner: true
+    });
+    NProgress.start();
+    $('#nprogress .bar').css({
+        'background': '#29d'
+    });
+    $('#nprogress .peg').css({
+        'box-shadow': '0 0 10px #29d, 0 0 15px #29d'
+    });
+    $('#nprogress .spinner-icon').css({
+        'border-top-color': '#29d',
+        'border-left-color': '#29d'
+    });
+    setTimeout(function() {
+        NProgress.done();
+        $('.fade').removeClass('out');
+    }, 800);
+</script>
+
+
+
+
+
+    <!-- Leancloud -->
+    <script src="https://unpkg.com/leancloud-storage@4.15.2/dist/av-core-min.js"></script>
+    <script>
+        AV.init({
+            appId: 'JkkcAnmWKd9bhtQSZaHXbfT8-MdYXbMMI',
+            appKey: 'cLQJPFnOFDZHxvqDpGljt9ne',
+            serverURL: 'http://blog.declantea.com'
+        });
+        const AV = require("leancloud-storage/core");
+        const adapters = require("platform-adapters-browser");
+        AV.setAdapters(adapters);
+
+    </script>
+    <script type="text/ls-javascript" id="leancloud-views-script">
+    function showTime(Counter) {
+        var query = new AV.Query(Counter);
+        $('.leancloud-views_num').each(function() {
+            var url = $(this).attr('id').trim();
+            query.equalTo('url', url);
+            query.find({
+                success: function(results) {
+                    if (results.length === 0) {
+                        var content = '0 ' + $(document.getElementById(url)).text();
+                        $(document.getElementById(url)).text(content);
+                        return;
+                    }
+                    for (var i = 0; i < results.length; i++) {
+                        var object = results[i];
+                        var content = object.get('time') + ' ' + $(document.getElementById(url)).text();
+                        $(document.getElementById(url)).text(content);
+                    }
+                },
+                error: function(object, error) {
+                    console.log('Error: ' + error.code + ' ' + error.message);
+                }
+            });
+        });
+    }
+
+    function addCount(Counter) {
+      var Counter = AV.Object.extend('Counter');
+      url = $('.leancloud-views_num').attr('id').trim();
+      title = $('.leancloud-views_num').attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+      query.equalTo('url', url);
+      query.find({
+          success: function(results) {
+            if (results.length > 0) {
+                var counter = results[0];
+                counter.fetchWhenSave(true);
+                counter.increment('time');
+                counter.save(null, {
+                    success: function(counter) {
+                        var content =  counter.get('time') + ' ' + $(document.getElementById(url)).text();
+                        $(document.getElementById(url)).text(content);
+                    },
+                    error: function(counter, error) {
+                        console.log('Failed to save Visitor num, with error message: ' + error.message);
+                    }
+                });
+            } else {
+              var newcounter = new Counter();
+              newcounter.set('title', title);
+              newcounter.set('url', url);
+              newcounter.set('time', 1);
+              newcounter.save(null, {
+                  success: function(newcounter) {
+                      console.log('newcounter.get(\'time\')='+newcounter.get('time'));
+                      var content = newcounter.get('time') + ' ' + $(document.getElementById(url)).text();
+                      $(document.getElementById(url)).text(content);
+                  },
+                  error: function(newcounter, error) {
+                      console.log('Failed to create');
+                  }
+              });
+            }
+        },
+        error: function(error) {
+            console.log('Error:' + error.code + ' ' + error.message);
+        }
+      });
+    }
+    $(function() {
+        var Counter = AV.Object.extend('Counter');
+        if ($('.leancloud-views_num').length === 1) {
+            addCount(Counter);
+        } else if ($('.post-title-link').length > 1) {
+            showTime(Counter);
+        }
+    });
+</script>
+
+
+
+
+
+
+   
+
+
+
+
+
+<!-- UC Browser Compatible -->
+
+<!-- Import prettify js  -->
+
+
+    
+        <script>lsloader.load("hanabi","/js/hanabi-browser-bundle.js?5+2z7ZZmFuZK5IcimlZbxw==", true)</script>
+    
+
+
+<!-- Window Load -->
+<!-- add class for prettify -->
+<script type="text/ls-javascript" id="window-load">
+    $(window).on('load', function() {
+        // Post_Toc parent position fixed
+        $('.post-toc-wrap').parent('.mdl-menu__container').css('position', 'fixed');
+    });
+
+    
+    
+        
+        
+            
+                
+                    HanabiBrowser.putColor('#4285F4');
+                
+                    HanabiBrowser.putColor('#DB4437');
+                
+                    HanabiBrowser.putColor('#F4B400');
+                
+                    HanabiBrowser.putColor('#0F9D58');
+                
+            
+        
+        HanabiBrowser.start('pre code',false);
+    
+</script>
+
+<!-- MathJax Load-->
+
+
+<!-- Bing Background -->
+
+
+<script type="text/ls-javascript" id="lazy-load">
+    // Offer LazyLoad
+    queue.offer(function(){
+        $('.lazy').lazyload({
+            effect : 'show'
+        });
+    });
+
+    // Start Queue
+    $(document).ready(function(){
+        setInterval(function(){
+            queue.execNext();
+        },200);
+    });
+</script>
+
+<!-- Custom Footer -->
+
+
+
+<script>
+    (function(){
+        var scriptList = document.querySelectorAll('script[type="text/ls-javascript"]')
+
+        for (var i = 0; i < scriptList.length; ++i) {
+            var item = scriptList[i];
+            lsloader.runInlineScript(item.id,item.id);
+        }
+    })()
+console.log('\n %c © Material Theme | Version: 1.5.2 | https://github.com/viosey/hexo-theme-material %c \n', 'color:#455a64;background:#e0e0e0;padding:5px 0;border-top-left-radius:5px;border-bottom-left-radius:5px;', 'color:#455a64;background:#e0e0e0;padding:5px 0;border-top-right-radius:5px;border-bottom-right-radius:5px;');
+</script>
+
+        </main>
+    </div>
+</body>
+
+
+
+</html>
