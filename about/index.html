@@ -27,6 +27,8 @@
     <link rel="dns-prefetch" href="https://cdn1.lncld.net"/>
 
 
+    <link rel="dns-prefetch" href="https://busuanzi.ibruce.info"/>
+
 
 
 
@@ -478,7 +480,7 @@ const wap = new APlayer({
 <li>爱自己，爱家人，爱他人，爱社会，爱国家，爱身边的一花一木，一个谈不上有为的无害青年</li>
 </ul>
 <h1 id="联系我"><a href="#联系我" class="headerlink" title="联系我"></a>联系我</h1><ul>
-<li>电子邮件: &nbsp;&nbsp;<a href="mailto:&#116;&#x61;&#x6f;&#x68;&#x6f;&#110;&#103;&#x79;&#97;&#x6f;&#x40;&#x67;&#x6d;&#97;&#105;&#x6c;&#x2e;&#x63;&#x6f;&#109;">&#116;&#x61;&#x6f;&#x68;&#x6f;&#110;&#103;&#x79;&#97;&#x6f;&#x40;&#x67;&#x6d;&#97;&#105;&#x6c;&#x2e;&#x63;&#x6f;&#109;</a></li>
+<li>电子邮件: &nbsp;&nbsp;<a href="mailto:&#116;&#x61;&#111;&#104;&#111;&#x6e;&#103;&#121;&#x61;&#111;&#64;&#103;&#109;&#x61;&#x69;&#108;&#x2e;&#99;&#111;&#x6d;">&#116;&#x61;&#111;&#104;&#111;&#x6e;&#103;&#121;&#x61;&#111;&#64;&#103;&#109;&#x61;&#x69;&#108;&#x2e;&#99;&#111;&#x6d;</a></li>
 <li>社交网络: &nbsp;&nbsp;Facebook: &nbsp;<a target="_blank" rel="noopener" href="https://www.facebook.com/hongyao.tao">@Declan</a> &nbsp;&nbsp;Twitter:&nbsp;<a target="_blank" rel="noopener" href="https://twitter.com/BlackSpark_HY">@Declan</a> &nbsp;&nbsp;</li>
 <li>游戏账户: &nbsp;&nbsp;Steam: <a target="_blank" rel="noopener" href="http://steamcommunity.com/id/declantao">@Declan</a></li>
 </ul>
@@ -601,6 +603,17 @@ const wap = new APlayer({
 		-->
     
 
+    
+        
+            <!-- Busuanzi Views -->
+            <a class="post_share-link" href="#">
+                <li class="mdl-menu__item">
+                    <span id="busuanzi_container_page_pv">
+                        <span id="busuanzi_value_page_pv"></span>&nbsp;浏览量
+                    </span>
+                </li>
+            </a>
+        
     
 
     <!-- Share Weibo -->
@@ -974,6 +987,19 @@ href="https://unpkg.com/@waline/client@v3/dist/waline.css"
 				
 			</div>
 			
+				<div class="pv-pu">
+				<span class="site-uv" title="总访客量">
+					<i class="material-icons looks-icon" >supervisor_account</i> 
+					<span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+				</span>
+				<span class="post-meta-divider">|</span>
+				<span class="site-pv" title="总访问量">
+					<i class="material-icons looks-icon" >remove_red_eye</i>
+					<span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+				</span>
+				
+				</div>
+			
 		</div>
         <!-- Paradox Footer Right Section -->
 
@@ -1034,16 +1060,12 @@ href="https://unpkg.com/@waline/client@v3/dist/waline.css"
 
 
     <!-- Leancloud -->
-    <script src="https://unpkg.com/leancloud-storage@4.15.2/dist/av-core-min.js"></script>
+    <script src="https://unpkg.com/leancloud-storage@4.15.2/dist/av-min.js"></script>
     <script>
         AV.init({
             appId: 'JkkcAnmWKd9bhtQSZaHXbfT8-MdYXbMMI',
-            appKey: 'cLQJPFnOFDZHxvqDpGljt9ne',
-            serverURL: 'http://blog.declantea.com'
+            appKey: 'cLQJPFnOFDZHxvqDpGljt9ne'
         });
-        const AV = require("leancloud-storage/core");
-        const adapters = require("platform-adapters-browser");
-        AV.setAdapters(adapters);
 
     </script>
     <script type="text/ls-javascript" id="leancloud-views-script">
@@ -1052,8 +1074,7 @@ href="https://unpkg.com/@waline/client@v3/dist/waline.css"
         $('.leancloud-views_num').each(function() {
             var url = $(this).attr('id').trim();
             query.equalTo('url', url);
-            query.find({
-                success: function(results) {
+            query.find().then((data)=>{
                     if (results.length === 0) {
                         var content = '0 ' + $(document.getElementById(url)).text();
                         $(document.getElementById(url)).text(content);
@@ -1064,11 +1085,7 @@ href="https://unpkg.com/@waline/client@v3/dist/waline.css"
                         var content = object.get('time') + ' ' + $(document.getElementById(url)).text();
                         $(document.getElementById(url)).text(content);
                     }
-                },
-                error: function(object, error) {
-                    console.log('Error: ' + error.code + ' ' + error.message);
-                }
-            });
+                });
         });
     }
 
@@ -1078,42 +1095,34 @@ href="https://unpkg.com/@waline/client@v3/dist/waline.css"
       title = $('.leancloud-views_num').attr('data-flag-title').trim();
       var query = new AV.Query(Counter);
       query.equalTo('url', url);
-      query.find({
-          success: function(results) {
+      query.find().then((results) =>{
             if (results.length > 0) {
                 var counter = results[0];
                 counter.fetchWhenSave(true);
                 counter.increment('time');
-                counter.save(null, {
-                    success: function(counter) {
+                counter.save().then((counter)=> {
                         var content =  counter.get('time') + ' ' + $(document.getElementById(url)).text();
                         $(document.getElementById(url)).text(content);
                     },
-                    error: function(counter, error) {
+                    (error)=> {
                         console.log('Failed to save Visitor num, with error message: ' + error.message);
                     }
-                });
+                );
             } else {
               var newcounter = new Counter();
               newcounter.set('title', title);
               newcounter.set('url', url);
               newcounter.set('time', 1);
-              newcounter.save(null, {
-                  success: function(newcounter) {
-                      console.log('newcounter.get(\'time\')='+newcounter.get('time'));
-                      var content = newcounter.get('time') + ' ' + $(document.getElementById(url)).text();
-                      $(document.getElementById(url)).text(content);
-                  },
-                  error: function(newcounter, error) {
-                      console.log('Failed to create');
-                  }
-              });
+              newcounter.save().then((newcounter)=> {
+                console.log('newcounter.get(\'time\')='+newcounter.get('time'));
+                var content = newcounter.get('time') + ' ' + $(document.getElementById(url)).text();
+                $(document.getElementById(url)).text(content);
+                },(error)=> {
+                    console.log('Failed to create');
+                }
+                );
             }
-        },
-        error: function(error) {
-            console.log('Error:' + error.code + ' ' + error.message);
-        }
-      });
+        });
     }
     $(function() {
         var Counter = AV.Object.extend('Counter');
@@ -1127,6 +1136,9 @@ href="https://unpkg.com/@waline/client@v3/dist/waline.css"
 
 
 
+
+    <!-- Busuanzi -->
+    <script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
 
 
